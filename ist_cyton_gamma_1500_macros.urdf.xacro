@@ -171,7 +171,7 @@
     <joint name="${prefix}joint4" type="revolute">
       <parent link="${prefix}elbow_pitch" />
       <child link="${prefix}elbow_yaw" />
-      <origin xyz="-0.0171 -0.018 0.09746" rpy="0 0 0" />
+      <origin xyz="0.012 -0.018 0.09746" rpy="0 0 0" />
       <limit lower="-1.8757" upper="1.4615" effort="100.0" velocity="1.0" />
       <axis xyz="0 -1 0" />
     </joint>
@@ -200,7 +200,7 @@
     <joint name="${prefix}joint5" type="revolute">
       <parent link="${prefix}elbow_yaw" />
       <child link="${prefix}wrist_pitch" />
-      <origin xyz="-0.02626 0.018 0.0718" rpy="0 0 ${M_PI}" />
+      <origin xyz="-0.02626 -0.02 0.0718" rpy="0 0 ${M_PI}" />
       <limit lower="-1.5766" upper="1.5382" effort="100.0" velocity="1.0" />
       <axis xyz="-1 0 0" />
     </joint>
@@ -237,7 +237,7 @@
     <joint name="${prefix}joint6" type="revolute">
       <parent link="${prefix}wrist_pitch" />
       <child link="${prefix}Wrist" />
-      <origin rpy="0 3.14 0" xyz="-0.026255 0.0 0.115"/>
+      <origin rpy="0 3.14 0" xyz="-0.026255 0.02 0.115"/>
       <limit lower="-2.5279" upper="2.5355" effort="100.0" velocity="1.0" />
       <axis xyz="0 0 1" />
     </joint>
